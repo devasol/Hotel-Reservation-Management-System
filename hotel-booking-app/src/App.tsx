@@ -16,6 +16,7 @@ import FAQ from './components/FAQ';
 import MyAccount from './components/MyAccount';
 import BookingConfirmation from './components/BookingConfirmation';
 import Payment from './components/Payment';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import './styles/App.css';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/account" element={<MyAccount />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             </Routes>
           </main>
           <Footer />
