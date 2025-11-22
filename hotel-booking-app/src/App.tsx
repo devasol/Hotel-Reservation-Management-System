@@ -14,6 +14,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import MyAccount from './components/MyAccount';
+import BookingConfirmation from './components/BookingConfirmation';
 import './styles/App.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <Route path="/rooms" element={<Rooms />} />
               <Route path="/reservation" element={<Reservation />} />
               <Route path="/book/:roomName" element={<BookNow />} />
+              <Route path="/confirmation/:roomName" element={<BookingConfirmation />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/services" element={<Services />} />
               <Route path="/gallery" element={<Gallery />} />
