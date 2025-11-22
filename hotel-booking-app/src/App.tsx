@@ -21,6 +21,7 @@ import TermsOfService from './components/TermsOfService';
 import NewsletterSignup from './components/NewsletterSignup';
 import SpecialOffers from './components/SpecialOffers';
 import RoomDetails from './components/RoomDetails';
+import ThankYou from './components/ThankYou';
 import './styles/App.css';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
               <Route path="/book/:roomName" element={<BookNow />} />
               <Route path="/payment/:roomName" element={<Payment />} />
               <Route path="/confirmation/:roomName" element={<BookingConfirmation />} />
+              <Route path="/thank-you" element={<ThankYou />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/services" element={<Services />} />
               <Route path="/gallery" element={<Gallery />} />
