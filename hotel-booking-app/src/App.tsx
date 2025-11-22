@@ -19,6 +19,7 @@ import Payment from './components/Payment';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import NewsletterSignup from './components/NewsletterSignup';
+import SpecialOffers from './components/SpecialOffers';
 import './styles/App.css';
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="/newsletter" element={<NewsletterSignup />} />
+              <Route path="/offers" element={<SpecialOffers />} />
             </Routes>
           </main>
           <Footer />
