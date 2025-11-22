@@ -23,6 +23,7 @@ import SpecialOffers from './components/SpecialOffers';
 import RoomDetails from './components/RoomDetails';
 import ThankYou from './components/ThankYou';
 import Reviews from './components/Reviews';
+import Careers from './components/Careers';
 import './styles/App.css';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
               <Route path="/confirmation/:roomName" element={<BookingConfirmation />} />
               <Route path="/thank-you" element={<ThankYou />} />
               <Route path="/reviews" element={<Reviews />} />
+              <Route path="/careers" element={<Careers />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/services" element={<Services />} />
               <Route path="/gallery" element={<Gallery />} />
