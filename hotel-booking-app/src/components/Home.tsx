@@ -124,7 +124,7 @@ const Home: React.FC = () => {
           <Link to="/reservation" className="btn btn-primary btn-lg">
             <FaCalendarAlt style={{ marginRight: '10px' }} /> Make Reservation
           </Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
