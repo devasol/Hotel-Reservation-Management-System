@@ -41,9 +41,14 @@ const Rooms: React.FC = () => {
               <div className="room-facilities">Facilities: {room.facility}</div>
               <div className="room-price">Price: {room.price} tk/night</div>
               <div className="room-available">Available: {room.available} rooms</div>
-              <button className="btn btn-primary">
-                <Link to={`/book/${room.roomname}`} className="nav-link">Book Now</Link>
-              </button>
+              <div className="room-actions">
+                <button className="btn btn-primary">
+                  <Link to={`/room/${room.roomname}`} className="nav-link">View Details</Link>
+                </button>
+                <button className="btn btn-secondary">
+                  <Link to={`/book/${room.roomname}`} className="nav-link">Book Now</Link>
+                </button>
+              </div>
             </div>
           </div>
         ))}
