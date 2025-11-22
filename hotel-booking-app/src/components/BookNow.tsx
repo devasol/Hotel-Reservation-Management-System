@@ -49,7 +49,7 @@ const BookNow: React.FC = () => {
     }
   }, [rememberMe]);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
@@ -66,23 +66,13 @@ const BookNow: React.FC = () => {
       localStorage.removeItem('phone');
     }
 
-    try {
-      const result = await apiService.bookRoom({
-        checkin,
-        checkout,
-        name,
-        phone,
-        roomname: roomName!
-      });
-      
-      alert(result);
-      navigate('/'); // Redirect to home after successful booking
-    } catch (error) {
-      console.error('Error booking room:', error);
-      alert('Error booking room. Please try again.');
-    } finally {
+    // In a real app, we would save booking data to state/context
+    // and then navigate to payment page
+    setTimeout(() => {
+      // Navigate to payment page with the room name and booking details
+      navigate(`/payment/${roomName}`);
       setLoading(false);
-    }
+    }, 1000); // Simulate processing time
   };
 
   if (!room) {
@@ -151,7 +141,7 @@ const BookNow: React.FC = () => {
         </div>
         
         <button type="submit" className="btn btn-primary" disabled={loading}>
-          {loading ? 'Booking...' : 'Book Now'}
+          {loading ? 'Processing...' : 'Continue to Payment'}
         </button>
       </form>
       
