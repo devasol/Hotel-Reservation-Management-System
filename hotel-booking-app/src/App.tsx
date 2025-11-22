@@ -25,6 +25,7 @@ import ThankYou from './components/ThankYou';
 import Reviews from './components/Reviews';
 import Careers from './components/Careers';
 import Blog from './components/Blog';
+import Support from './components/Support';
 import './styles/App.css';
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
               <Route path="/reviews" element={<Reviews />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/support" element={<Support />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/services" element={<Services />} />
               <Route path="/gallery" element={<Gallery />} />
