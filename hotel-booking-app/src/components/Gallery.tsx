@@ -140,7 +140,7 @@ const Gallery: React.FC = () => {
         >
           <FaArrowRight />
         </motion.button>
-      </div>
+      </motion.div>
 
       <div style={{ textAlign: 'center', marginTop: '20px' }}>
         {images.map((_, index) => (
