@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
+import PageTransition from './components/PageTransition';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -37,33 +38,35 @@ function App() {
         <div className="App">
           <Header />
           <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/rooms" element={<Rooms />} />
-              <Route path="/room/:roomName" element={<RoomDetails />} />
-              <Route path="/reservation" element={<Reservation />} />
-              <Route path="/book/:roomName" element={<BookNow />} />
-              <Route path="/payment/:roomName" element={<Payment />} />
-              <Route path="/confirmation/:roomName" element={<BookingConfirmation />} />
-              <Route path="/thank-you" element={<ThankYou />} />
-              <Route path="/reviews" element={<Reviews />} />
-              <Route path="/careers" element={<Careers />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/support" element={<Support />} />
-              <Route path="/sitemap" element={<SiteMap />} />
-              <Route path="/admin" element={<Admin />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/account" element={<MyAccount />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/terms-of-service" element={<TermsOfService />} />
-              <Route path="/newsletter" element={<NewsletterSignup />} />
-              <Route path="/offers" element={<SpecialOffers />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <PageTransition>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/rooms" element={<Rooms />} />
+                <Route path="/room/:roomName" element={<RoomDetails />} />
+                <Route path="/reservation" element={<Reservation />} />
+                <Route path="/book/:roomName" element={<BookNow />} />
+                <Route path="/payment/:roomName" element={<Payment />} />
+                <Route path="/confirmation/:roomName" element={<BookingConfirmation />} />
+                <Route path="/thank-you" element={<ThankYou />} />
+                <Route path="/reviews" element={<Reviews />} />
+                <Route path="/careers" element={<Careers />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/support" element={<Support />} />
+                <Route path="/sitemap" element={<SiteMap />} />
+                <Route path="/admin" element={<Admin />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/faq" element={<FAQ />} />
+                <Route path="/account" element={<MyAccount />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-of-service" element={<TermsOfService />} />
+                <Route path="/newsletter" element={<NewsletterSignup />} />
+                <Route path="/offers" element={<SpecialOffers />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </PageTransition>
           </main>
           <Footer />
         </div>
