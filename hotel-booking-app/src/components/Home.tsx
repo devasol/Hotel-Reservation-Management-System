@@ -101,7 +101,7 @@ const Home: React.FC = () => {
                 <div className="room-details">
                   <h3>{room.name}</h3>
                   <p style={{ color: '#666', marginBottom: '10px' }}>{room.description}</p>
-                  <p><strong>{room.price} <span style={{ fontSize: '0.9em', color: '#666' }}/per night</span></strong></p>
+                  <p><strong>{room.price} <span style={{ fontSize: '0.9em', color: '#666' }}>per night</span></strong></p>
                   <button className="btn btn-primary">
                     <Link to="/rooms" className="nav-link">
                       <FaCalendarAlt style={{ marginRight: '8px' }} /> View Details
