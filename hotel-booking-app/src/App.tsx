@@ -18,6 +18,7 @@ import BookingConfirmation from './components/BookingConfirmation';
 import Payment from './components/Payment';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
+import NewsletterSignup from './components/NewsletterSignup';
 import './styles/App.css';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
               <Route path="/account" element={<MyAccount />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="/newsletter" element={<NewsletterSignup />} />
             </Routes>
           </main>
           <Footer />
