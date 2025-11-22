@@ -13,6 +13,7 @@ import Gallery from './components/Gallery';
 import About from './components/About';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
+import MyAccount from './components/MyAccount';
 import './styles/App.css';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/account" element={<MyAccount />} />
             </Routes>
           </main>
           <Footer />
