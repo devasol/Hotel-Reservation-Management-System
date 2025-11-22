@@ -20,6 +20,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import NewsletterSignup from './components/NewsletterSignup';
 import SpecialOffers from './components/SpecialOffers';
+import RoomDetails from './components/RoomDetails';
 import './styles/App.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/rooms" element={<Rooms />} />
+              <Route path="/room/:roomName" element={<RoomDetails />} />
               <Route path="/reservation" element={<Reservation />} />
               <Route path="/book/:roomName" element={<BookNow />} />
               <Route path="/payment/:roomName" element={<Payment />} />
