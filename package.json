@@ -1,0 +1,19 @@
+{
+  "name": "hotel-reservation-management-system",
+  "version": "1.0.0",
+  "description": "Complete hotel reservation management system with React frontend and Node.js/MySQL backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd hotel-booking-app && node server.js",
+    "client": "cd hotel-booking-app && npm start",
+    "dev": "concurrently \"npm run server-dev\" \"npm run client\"",
+    "server-dev": "cd hotel-booking-app && nodemon server.js"
+  },
+  "keywords": ["hotel", "reservation", "management", "react", "typescript", "mysql"],
+  "author": "Qwen Code",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
