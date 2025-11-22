@@ -27,6 +27,7 @@ import Careers from './components/Careers';
 import Blog from './components/Blog';
 import Support from './components/Support';
 import SiteMap from './components/SiteMap';
+import NotFound from './components/NotFound';
 import './styles/App.css';
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="/newsletter" element={<NewsletterSignup />} />
               <Route path="/offers" element={<SpecialOffers />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />
